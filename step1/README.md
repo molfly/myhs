@@ -29,7 +29,9 @@ Hello from module Test!
 ### Команды:
 
 загрузить модуль `:load` или `:l`
+
 перезагрузить модуль `:reload` или `:r`
+
 выйти `:quit` или `:q`
 
 ### Табы и пробелы
@@ -58,3 +60,14 @@ Prelude> max 5 42
 Имя функции и имена параметров должны начинаться с буквы в нижнем регистре.
 
 Пример функции описан в `demo.sh`.
+
+Вызов
+```
+$ ghci
+GHCi, version 8.6.3: http://www.haskell.org/ghc/  :? for help
+Prelude> :l Demo
+[1 of 1] Compiling Main             ( Demo.hs, interpreted )
+Ok, one module loaded.
+*Main> sumSquares 1 2
+5
+```
